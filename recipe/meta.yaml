@@ -28,7 +28,7 @@ test:
     - hxnfly
     - hxntools
     - ppmac
-    - pypdf2
+    - PyPDF2
     - reportlab
     - tqdm
 
