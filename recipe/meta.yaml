@@ -18,17 +18,17 @@ requirements:
     - python
     - hxnfly >=0.0.2
     - hxntools >=0.0.4
-    - tqdm
     - ppmac
     - pypdf2
     - reportlab
+    - tqdm
 
 test:
   imports:
     - hxnfly
     - hxntools
     - ppmac
-    - pypdf2
+    - PyPDF2
     - reportlab
     - tqdm
 
