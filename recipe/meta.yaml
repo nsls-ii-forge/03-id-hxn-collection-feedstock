@@ -1,0 +1,39 @@
+{% set name = "03-id-hxn-collection" %}
+{% set year = "2019" %}
+{% set cycle = "3" %}
+{% set version = "0" %}
+
+package:
+  name: {{ name|lower }}
+  version: {{ year }}C{{ cycle }}.{{ version }}
+
+build:
+  number: 0
+  skip: True  # [py<36]
+
+requirements:
+  host:
+    - python
+  run:
+    - python
+    - hxnfly >=0.0.2
+    - hxntools >=0.0.4
+    - tqdm
+    - ppmac
+    - pypdf2
+    - reportlab
+
+test:
+  imports:
+    - hxnfly
+    - hxntools
+    - ppmac
+    - pypdf2
+    - reportlab
+    - tqdm
+
+about:
+  home: https://github.com/NSLS-II-HXN
+  license: BSD 3-Clause
+  license_file: LICENSE
+  summary: Collection metapackage for the NSLS-II HXN beamline
